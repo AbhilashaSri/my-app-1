@@ -2,7 +2,7 @@ node
 	{
 	    stage('git checkout')
 	    {
-	        git 'https://github.com/mohankrishna23/hello-world.git''
+	        git 'https://github.com/mohankrishna23/hello-world.git'
 	    }
 	   stage('files present at git')
 	   {
