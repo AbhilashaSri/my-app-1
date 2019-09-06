@@ -10,7 +10,8 @@ node
 	   }
 	   stage('build and compile')
 	   {
-	   sh 'mvn package'
+           def mvnHome = tool name: 'Maven', type: 'maven'   //returns maven home directory
+	   sh "${mvnHome}/bin/mvn package"
 	   }
 	   stage('email notification')
 	   {
